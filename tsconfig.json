@@ -21,7 +21,8 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true;
     // node_modules 내부의 타입 체크 생략 (빌드 속도 향상)
   }
 }
