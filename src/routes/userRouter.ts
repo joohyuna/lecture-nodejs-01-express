@@ -11,7 +11,7 @@ const mockUsers = [
 router.get("/users/login", (req, res) => {
     // const email = req.query.email;
     // const password = req.query.password;
-    // req.query는 객에에서 1개이상의 프로퍼티 값을 뽕아로여 한다면
+    // req.query는 객채에서 1개이상의 프로퍼티 값을 뽑아 오려고 한다면
     const { email, password } = req.query;  // 쿼리 스트링으로 들어온값을 꺼내는 방법
     // res.send(`email: ${email}, password: ${password}`);
 
@@ -35,7 +35,7 @@ router.get("/users/login", (req, res) => {
     }
 
 
-    // 3. 그 찾은 그 외원정보와 비밀번호를 비교해서 맞는지  -> 성공, 실패
+    // 3. 그 찾은 그 회원정보와 비밀번호를 비교해서 맞는지  -> 성공, 실패
     // 더 비교할 값이 있으면 그걸로 일치하는지 확인
     if (user.password !== password) {
         return res.sendFile(failPage);
