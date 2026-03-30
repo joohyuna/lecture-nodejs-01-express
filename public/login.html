@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인페이지</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+    <div class="container login-container">
+        <h2>로그인</h2>
+        <p class="subTitle">GET 방식으로 전송해봅시다. </p>
+
+        <form action="/users/login" method="get">
+            <div class="input-group">
+                <label for="emailId">이메일</label>
+                <input type="email" name="email" id="emailId" placeholder="이메일 형식으로 작성해 주세요" required />
+            </div>
+            <div class="input-group">
+                <label for="passwdId">비밀번호</label>
+                <input type="password" name="password" id="passwdId"  required />
+            </div>
+            <button type="submit" class="login-btn">로그인</button>
+        </form>
+    </div>
+</body>
+</html>
